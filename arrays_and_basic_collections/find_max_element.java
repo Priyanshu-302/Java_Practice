@@ -1,0 +1,20 @@
+package arrays_and_basic_collections;
+
+public class find_max_element {
+    public static int maximumInArray(int[] arr) {
+        int max = Integer.MIN_VALUE;
+
+        for (int i : arr) {
+            if (i > max) {
+                max = i;
+            }
+        }
+
+        return max;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 4, 5 };
+        System.out.println(maximumInArray(arr));
+    }
+}
